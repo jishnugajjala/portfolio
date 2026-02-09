@@ -277,8 +277,32 @@ h2::before {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+        margin: 10px;
+    }
+    
     header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    nav {
+        top: 10px;
+        margin: 0 10px 20px;
+        padding: 10px;
+    }
+    
+    nav a {
+        margin: 5px 8px;
+        font-size: 0.9rem;
+        padding: 10px 14px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
     }
     
     section {
@@ -286,12 +310,51 @@ h2::before {
         margin: 20px 10px;
     }
     
-    nav a {
-        margin: 0 10px;
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    #about p {
+        font-size: 1rem;
+        padding-left: 15px;
+    }
+    
+    #projects article {
+        padding: 20px;
+    }
+    
+    #projects article:hover {
+        transform: translateX(5px);
+    }
+    
+    #contact a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    
+    header p {
         font-size: 0.9rem;
     }
     
+    nav a {
+        display: block;
+        margin: 8px auto;
+        max-width: 200px;
+    }
+    
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+    }
+    
+    #projects h3 {
+        font-size: 1.1rem;
     }
 }
